@@ -12,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Veritas AI - Fake News Detector",
   description: "High-end AI-powered fake news analysis tool",
+  verification: {
+    google: "Voajuiba_RGszKtJSndzqh9GRQ-ss7EpPZ1r_RiP77g", // Paste your code here
+  },
 };
 
 import { Providers } from "@/components/Providers";
