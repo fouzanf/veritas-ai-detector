@@ -269,7 +269,9 @@ export default function DashboardClient({ session }: { session: any }) {
                       />
                     </svg>
                     <div className="absolute flex flex-col items-center">
-                      <span className="text-5xl font-black text-foreground font-heading">{analysis.confidence}%</span>
+                      <span className={`${analysis.confidence === 100 ? 'text-3xl' : 'text-4xl'} font-black text-foreground font-heading tracking-tight transition-all duration-300`}>
+                        {analysis.confidence}%
+                      </span>
                       <span className="text-[10px] uppercase font-bold text-muted-foreground tracking-widest mt-1">Confidence</span>
                     </div>
                   </div>

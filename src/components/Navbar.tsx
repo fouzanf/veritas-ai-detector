@@ -18,7 +18,7 @@ export function Navbar() {
   return (
     <nav className="border-b border-white/5 bg-black/40 backdrop-blur-2xl sticky top-0 z-50 shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
       <div className="container max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href={session ? "/dashboard" : "/"} className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center border border-primary/30 group-hover:bg-primary/30 transition-colors shadow-[0_0_15px_rgba(108,99,255,0.2)]">
             <ShieldCheck className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
           </div>
