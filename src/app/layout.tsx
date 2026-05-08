@@ -1,23 +1,27 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Syne } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Providers } from "@/components/Providers";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
 
+const syne = Syne({
+  variable: "--font-syne",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "Veritas AI - Fake News Detector",
-  description: "High-end AI-powered fake news analysis tool",
+  title: "Veritas AI - Premium Verification",
+  description: "Absolute production-grade fake news analysis tool",
   verification: {
-    google: "Voajuiba_RGszKtJSndzqh9GRQ-ss7EpPZ1r_RiP77g", // Paste your code here
+    google: "Voajuiba_RGszKtJSndzqh9GRQ-ss7EpPZ1r_RiP77g",
   },
 };
-
-import { Providers } from "@/components/Providers";
 
 export default function RootLayout({
   children,
@@ -26,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} bg-background text-foreground antialiased`}>
+      <body className={`${inter.variable} ${syne.variable} font-sans bg-background text-foreground antialiased selection:bg-primary/30 selection:text-white overflow-x-hidden`}>
         <Providers>
           <div className="min-h-screen flex flex-col">
             <Navbar />
